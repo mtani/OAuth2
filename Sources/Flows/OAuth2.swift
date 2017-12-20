@@ -331,6 +331,8 @@ open class OAuth2: OAuth2Base {
 	*/
 	open func tokenRequestForTokenRefresh(params: OAuth2StringDict? = nil) throws -> OAuth2AuthRequest {
 		let clientId = clientConfig.clientId
+        //mtani
+        let clientSecret = clientConfig.clientSecret
 		if type(of: self).clientIdMandatory && (nil == clientId || clientId!.isEmpty) {
 			throw OAuth2Error.noClientId
 		}
@@ -344,6 +346,10 @@ open class OAuth2: OAuth2Base {
 		if let clientId = clientId {
 			req.params["client_id"] = clientId
 		}
+        //mtani
+        if let clientSecret = clientSecret {
+            req.params["client_secret"] = clientSecret
+        }
 		req.add(params: params)
 		
 		return req

@@ -209,6 +209,10 @@ open class OAuth2PasswordGrant: OAuth2 {
 		if let clientId = clientConfig.clientId {
 			req.params["client_id"] = clientId
 		}
+        //mtani
+        if let clientSecret = clientConfig.clientSecret {
+            req.params["client_secret"] = clientSecret
+        }
 		if let scope = clientConfig.scope {
 			req.params["scope"] = scope
 		}
