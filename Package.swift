@@ -31,6 +31,6 @@ let package = Package(
 	],
 	dependencies: [
 		// SwiftKeychain is not yet available as a Package, so we symlink to /Sources and make it a Target
-		//.Package(url: "https://github.com/yankodimitrov/SwiftKeychain.git", majorVersion: 1),
+		.Package(url: "https://github.com/TakeScoop/SwiftyRSA.git", majorVersion: 1),
 	]
 )
