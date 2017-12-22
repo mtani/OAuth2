@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author       = { "Pascal Pfiffner" => "phase.of.matter@gmail.com" }
   s.source       = { :git => "https://github.com/p2/OAuth2.git", :tag => "#{s.version}", :submodules => true }
 
-  s.ios.deployment_target = "8.3"
+  s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "9.0"
   s.pod_target_xcconfig = { "OTHER_SWIFT_FLAGS" => "-DNO_MODULE_IMPORT -DNO_KEYCHAIN_IMPORT" }
