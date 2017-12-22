@@ -36,4 +36,12 @@ Pod::Spec.new do |s|
   s.tvos.source_files = "Sources/tvOS/*.swift"
 
   s.ios.framework = "SafariServices"
+  
+  s.subspec "Core" do |ss|
+      ss.source_files  = "Oauth2/Base/", "Oauth2/DataLoader"
+      ss.dependency "SwiftyRSA", "~> 1.0"
+  end
+  
+  
+  
 end
