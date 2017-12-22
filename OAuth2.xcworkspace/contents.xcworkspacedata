@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftyRSA/SwiftyRSA.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:OAuth2.xcodeproj">
    </FileRef>
 </Workspace>

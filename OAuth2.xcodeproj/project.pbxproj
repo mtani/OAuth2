@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C2F5E5B1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F5E5A1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift */; };
 		19C919DD1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C919DC1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift */; };
+		36C83E851FED00FB003B0DF3 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */; };
+		36C83E871FED0103003B0DF3 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */; };
 		6598544E1C5B3C9500237D39 /* OAuth2Authorizer+tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598543F1C5B3B4000237D39 /* OAuth2Authorizer+tvOS.swift */; };
 		6598544F1C5B3C9C00237D39 /* OAuth2Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB8640193FAB9200C4EEA1 /* OAuth2Base.swift */; };
 		659854501C5B3C9C00237D39 /* OAuth2Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47D2A1B1E3FDD0057D838 /* OAuth2Requestable.swift */; };
@@ -165,6 +167,8 @@
 /* Begin PBXFileReference section */
 		0C2F5E5A1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2CodeGrantAzure.swift; sourceTree = "<group>"; };
 		19C919DC1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OAuth2CustomAuthorizer+macOS.swift"; sourceTree = "<group>"; };
+		36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6598543F1C5B3B4000237D39 /* OAuth2Authorizer+tvOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "OAuth2Authorizer+tvOS.swift"; path = "Sources/tvOS/OAuth2Authorizer+tvOS.swift"; sourceTree = SOURCE_ROOT; };
 		659854461C5B3BEA00237D39 /* OAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EC05DF1C9050CB00DE9186 /* OAuth2KeychainAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2KeychainAccount.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C83E871FED0103003B0DF3 /* SwiftyRSA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C83E851FED00FB003B0DF3 /* SwiftyRSA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36C83E841FED00FB003B0DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */,
+				36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65D294B91C57CB47009DA970 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +408,7 @@
 				EEDB8626193FAAE500C4EEA1 /* OAuth2 */,
 				EEE209A319427DFE00736F1A /* Tests */,
 				EEDB8625193FAAE500C4EEA1 /* Products */,
+				36C83E841FED00FB003B0DF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -909,7 +925,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -960,7 +976,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
