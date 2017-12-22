@@ -19,6 +19,7 @@
 //
 
 import Foundation
+import SwiftyRSA
 
 
 extension HTTPURLResponse {
@@ -96,7 +97,17 @@ extension URLRequest {
 		guard let access = oauth2.clientConfig.accessToken, !access.isEmpty else {
 			throw OAuth2Error.noAccessToken
 		}
+       
+        let privateKey = try PrivateKey(pemNamed: "private")
+        
+        let message = try ClearMessage(string: access, using: .utf8)
+        let signature = try message.signed(with: privateKey, digestType: .sha256)
+        
+        //let data = signature.data
+        let base64String = signature.base64String
+        
 		setValue("Bearer \(access)", forHTTPHeaderField: "Authorization")
+        setValue(base64String, forHTTPHeaderField: "Signature")
         //test
 	}
 	
