@@ -19,6 +19,7 @@
 //
 
 import Foundation
+import SwiftyRSA
 
 
 /**
@@ -186,7 +187,17 @@ open class OAuth2Base: OAuth2Securable {
 	// MARK: - Keychain Integration
 	
 	/** Overrides base implementation to return the authorize URL. */
+    //mtani
 	override open func keychainServiceName() -> String {
+        //test SwiftRSA
+        
+        let publicKey = try! PublicKey(pemNamed: "public")
+        let clear = try! ClearMessage(string: "Clear Text", using: .utf8)
+        let encrypted = try! clear.encrypted(with: publicKey, padding: .PKCS1)
+        
+        // Then you can use:
+        let data = encrypted.data
+        let base64String = encrypted.base64String
 		return authURL.description
 	}
 	
@@ -457,6 +468,7 @@ Class, internally used, to store current authorization context, such as state an
 */
 open class OAuth2ContextStore {
 	
+    
 	/// Currently used redirect_url.
 	open var redirectURL: String?
 	
