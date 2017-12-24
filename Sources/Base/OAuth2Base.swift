@@ -120,6 +120,19 @@ open class OAuth2Base: OAuth2Securable {
 		get { return clientConfig.customParameters }
 		set { clientConfig.customParameters = newValue }
 	}
+    
+    //mtani
+    /// Query parameters.
+    public var queryParameters: OAuth2StringDict? {
+        get { return clientConfig.queryParameters }
+        set { clientConfig.queryParameters = newValue }
+    }
+    //mtani
+    /// The query.
+    open var query: String? {
+        get { return clientConfig.query }
+        set { clientConfig.query = newValue }
+    }
 	
 	
 	/// This closure is internally used with `authorize(params:callback:)` and only exposed for subclassing reason, do not mess with it!
@@ -187,17 +200,8 @@ open class OAuth2Base: OAuth2Securable {
 	// MARK: - Keychain Integration
 	
 	/** Overrides base implementation to return the authorize URL. */
-    //mtani
+   
 	override open func keychainServiceName() -> String {
-        //test SwiftRSA
-        
-        let publicKey = try! PublicKey(pemNamed: "public")
-        let clear = try! ClearMessage(string: "Clear Text", using: .utf8)
-        let encrypted = try! clear.encrypted(with: publicKey, padding: .PKCS1)
-        
-        // Then you can use:
-        let data = encrypted.data
-        let base64String = encrypted.base64String
 		return authURL.description
 	}
 	

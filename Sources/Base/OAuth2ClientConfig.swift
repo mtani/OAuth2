@@ -71,6 +71,14 @@ open class OAuth2ClientConfig {
 	
 	/// Add custom parameters to the authorization request.
 	public var customParameters: [String: String]? = nil
+    
+    /// Add query parameters to the request.
+    //mtani
+    public var queryParameters: [String: String]? = nil
+    
+    /// The request query.
+    //mtani
+    open var query: String?
 	
 	/// Most servers use UTF-8 encoding for Authorization headers, but that's not 100% true: make it configurable (see https://github.com/p2/OAuth2/issues/165).
 	open var authStringEncoding = String.Encoding.utf8
@@ -134,7 +142,11 @@ open class OAuth2ClientConfig {
 		if let params = settings["parameters"] as? OAuth2StringDict {
 			customParameters = params
 		}
-		
+        //mtani
+        if let queryParams = settings["query_parameters"] as? OAuth2StringDict {
+            queryParameters = queryParams
+        }
+        
 		// access token options
 		if let assume = settings["token_assume_unexpired"] as? Bool {
 			accessTokenAssumeUnexpired = assume

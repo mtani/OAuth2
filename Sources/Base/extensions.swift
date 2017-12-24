@@ -100,7 +100,17 @@ extension URLRequest {
        
         let privateKey = try PrivateKey(pemNamed: "private")
         
-        let message = try ClearMessage(string: access, using: .utf8)
+        //mtani
+        var content: String? = nil;
+        if((oauth2.clientConfig.query) != nil)
+        {
+            content = access + "?" + oauth2.clientConfig.query!
+        }
+        else{
+            content = access
+        }
+        
+        let message = try ClearMessage(string: content!, using: .utf8)
         let signature = try message.signed(with: privateKey, digestType: .sha256)
         
         //let data = signature.data
