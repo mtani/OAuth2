@@ -182,7 +182,6 @@
 		EE1391D91AC5B41A002C7B18 /* OAuth2CodeGrantBasicAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OAuth2CodeGrantBasicAuth.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EE20118B1E44D0BD00913FA7 /* OAuth2DataLoaderSessionTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2DataLoaderSessionTaskDelegate.swift; sourceTree = "<group>"; };
 		EE2486291AC85DD4002B31AF /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2WebViewController.swift; sourceTree = "<group>"; };
-		EE29836A1D3FC28000933CDD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		EE29836F1D40B83600933CDD /* OAuth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2.swift; sourceTree = "<group>"; };
 		EE2983741D40BE7600933CDD /* OAuth2AuthorizerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2AuthorizerUI.swift; sourceTree = "<group>"; };
 		EE29EABB195A0DB2008882C8 /* OAuth2DebugURLSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2DebugURLSessionDelegate.swift; sourceTree = "<group>"; };
@@ -405,7 +404,6 @@
 				EE8EE6DA1B12AB35005B90C5 /* CHANGELOG.md */,
 				EEAC179F1CAA69110025F84B /* CONTRIBUTING.md */,
 				EEAC17A01CAA69110025F84B /* CONTRIBUTORS.md */,
-				EE29836A1D3FC28000933CDD /* Package.swift */,
 				EE450CD31AD57578008AB6FC /* p2.OAuth2.podspec */,
 				EE01F96E1C58D5D6003AEA7E /* generate-docs.sh */,
 				EEDB8626193FAAE500C4EEA1 /* OAuth2 */,
