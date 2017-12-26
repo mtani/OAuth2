@@ -6,7 +6,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name         = "APIMARKETSDK"
+  s.name         = "p2.OAuth2"
   s.version      = "4.0.1"
   s.summary      = "OAuth2 framework for macOS, iOS and tvOS, written in Swift."
   s.description  = <<-DESC
