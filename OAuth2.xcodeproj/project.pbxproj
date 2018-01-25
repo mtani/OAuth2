@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C2F5E5B1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F5E5A1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift */; };
 		19C919DD1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C919DC1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift */; };
+		3680ADC72019A61500D63AE4 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3680ADC82019A61500D63AE4 /* SwiftyRSA.framework */; };
 		36C83E851FED00FB003B0DF3 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */; };
 		36C83E871FED0103003B0DF3 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */; };
 		6598544E1C5B3C9500237D39 /* OAuth2Authorizer+tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598543F1C5B3B4000237D39 /* OAuth2Authorizer+tvOS.swift */; };
@@ -167,6 +168,7 @@
 /* Begin PBXFileReference section */
 		0C2F5E5A1DE2DB8500F621E0 /* OAuth2CodeGrantAzure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2CodeGrantAzure.swift; sourceTree = "<group>"; };
 		19C919DC1E51CC8000BFC834 /* OAuth2CustomAuthorizer+macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OAuth2CustomAuthorizer+macOS.swift"; sourceTree = "<group>"; };
+		3680ADC82019A61500D63AE4 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6598543F1C5B3B4000237D39 /* OAuth2Authorizer+tvOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "OAuth2Authorizer+tvOS.swift"; path = "Sources/tvOS/OAuth2Authorizer+tvOS.swift"; sourceTree = SOURCE_ROOT; };
@@ -251,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3680ADC72019A61500D63AE4 /* SwiftyRSA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +270,7 @@
 		36C83E841FED00FB003B0DF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3680ADC82019A61500D63AE4 /* SwiftyRSA.framework */,
 				36C83E881FED0103003B0DF3 /* SwiftyRSA.framework */,
 				36C83E861FED00FB003B0DF3 /* SwiftyRSA.framework */,
 			);
